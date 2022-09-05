@@ -20,31 +20,14 @@ module upper_selector #(
 logic [n-1 : 0] select; 
 
 //mux selector logic
-generate
-    if(n == 2)
-        always_comb
-            case(configuration)
-                0: assign select = 0;
-                1: assign select = 1;
-                2: assign select = 0;
-                3: assign select = 1;
-                default: assign select = 0;
-            endcase            
-    else if (n == 3)
-        always_comb
-            case(configuration)
-                0: assign select = 0;
-                1: assign select = 1;
-                2: assign select = 2;
-                3: assign select = 0;
-                4: assign select = 1;
-                5: assign select = 2;
-                6: assign select = 0;
-                7: assign select = 1;
-                8: assign select = 2;
-                default: assign select = 0;
-            endcase
-endgenerate
+always_comb
+    case(configuration)
+        0: select = 0;
+        1: select = 1;
+        2: select = 0;
+        3: select = 1;
+        default: select = 0;
+    endcase 
 
 //mux
 assign north_o_selected = north_o[select];
