@@ -74,7 +74,7 @@ generate
     //             6: select = 2;
     //             7: select = 2;
     //             8: select = 2;
-    //             default: assign select = 0;
+    //             default: select = 0;
     //         endcase
 endgenerate
 //
