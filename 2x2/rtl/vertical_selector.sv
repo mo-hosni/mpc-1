@@ -37,43 +37,43 @@ generate
         0:
             always_comb
                 case(configuration)
-                    0: assign select = 0;
-                    1: assign select = 2;
-                    2: assign select = 1;
-                    3: assign select = 2;
-                    default: assign select = 0;
+                    0: select = 0;
+                    1: select = 2;
+                    2: select = 1;
+                    3: select = 2;
+                    default: select = 0;
                 endcase
         1:
             always_comb
             case(configuration)
-                0: assign select = 0;
-                1: assign select = 0;
-                2: assign select = 1;
-                3: assign select = 1;
-                default: assign select = 0;
+                0: select = 0;
+                1: select = 0;
+                2: select = 1;
+                3: select = 1;
+                default: select = 0;
             endcase 
         2: 
             always_comb
             case(configuration)
-                0: assign select = 2;
-                1: assign select = 0;
-                2: assign select = 2;
-                3: assign select = 1;
-                default: assign select = 0;
+                0: select = 2;
+                1: select = 0;
+                2: select = 2;
+                3: select = 1;
+                default: select = 0;
             endcase
         endcase
     // else if (n == 3)
     //     always_comb
     //         case(configuration)
-    //             0: assign select = 0;
-    //             1: assign select = 0;
-    //             2: assign select = 0;
-    //             3: assign select = 1;
-    //             4: assign select = 1;
-    //             5: assign select = 1;
-    //             6: assign select = 2;
-    //             7: assign select = 2;
-    //             8: assign select = 2;
+    //             0: select = 0;
+    //             1: select = 0;
+    //             2: select = 0;
+    //             3: select = 1;
+    //             4: select = 1;
+    //             5: select = 1;
+    //             6: select = 2;
+    //             7: select = 2;
+    //             8: select = 2;
     //             default: assign select = 0;
     //         endcase
 endgenerate
