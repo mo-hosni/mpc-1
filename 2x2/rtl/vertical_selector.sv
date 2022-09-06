@@ -45,22 +45,22 @@ generate
                 endcase
         1:
             always_comb
-            case(configuration)
-                0: select = 0;
-                1: select = 0;
-                2: select = 1;
-                3: select = 1;
-                default: select = 0;
-            endcase 
+                case(configuration)
+                    0: select = 0;
+                    1: select = 0;
+                    2: select = 1;
+                    3: select = 1;
+                    default: select = 0;
+                endcase 
         2: 
             always_comb
-            case(configuration)
-                0: select = 2;
-                1: select = 0;
-                2: select = 2;
-                3: select = 1;
-                default: select = 0;
-            endcase
+                case(configuration)
+                    0: select = 2;
+                    1: select = 0;
+                    2: select = 2;
+                    3: select = 1;
+                    default: select = 0;
+                endcase
         endcase
     // else if (n == 3)
     //     always_comb
