@@ -78,6 +78,7 @@ wire [31:0] wbs_adr_i_vline_0, wbs_adr_i_vline_1;
 //
 wire wbs_ack_o_vline_0, wbs_ack_o_vline_1;
 wire [31:0] wbs_dat_o_vline_0, wbs_dat_o_vline_1;
+wire [2:0] select_0, select_1, select_2;
 //No connection nets
 wire [13:0] NC_1, NC_2, NC_5, NC_6, NC_8, NC_9, NC_10, NC_11, NC_12, NC_13, NC_14, NC_15;
 wire [9:0] NC_3, NC_4, NC_7;
@@ -87,9 +88,9 @@ wire [31:0] NC_22, NC_23, NC_25;
 
 
 //vertical selectors
-v_line #(.position(0)) v_selector_0 (
+v_line  v_selector_0 (
     //inputs
-    .configuration, 
+    .select(select_0), 
 
     .north_o_0(north_o_0), 
     .north_oe_0(north_oe_0), 
@@ -149,9 +150,9 @@ v_line #(.position(0)) v_selector_0 (
     .wbs_ack_o_buf(wbs_ack_o_vline_0),
     .wbs_dat_o_buf(wbs_dat_o_vline_0)
     );
-v_line #(.position(1)) v_selector_1 (
+v_line v_selector_1 (
     //inputs
-    .configuration, 
+    .select(select_1), 
 
     .north_o_0(north_o_1), 
     .north_oe_0(north_oe_1), 
@@ -211,9 +212,9 @@ v_line #(.position(1)) v_selector_1 (
     .wbs_dat_o_buf(wbs_dat_o_vline_1)
     );
 
-v_line #(.position(2)) v_selector_2 (
+v_line v_selector_2 (
     //inputs
-    .configuration, 
+    .select(select_2), 
 
     .north_o_0(10'd0), 
     .north_oe_0(10'd0), 
@@ -292,6 +293,7 @@ top_h_line u_selector
 bot_h_line b_selector 
 (
     .configuration,
+    .select_0, .select_1, .select_2,
     //
     .wb_clk_i,
     .wb_rst_i,

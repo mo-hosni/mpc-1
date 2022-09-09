@@ -1,7 +1,7 @@
-module v_line #(parameter integer position = 0)
+module v_line 
 (
     //configuration
-    input [3:0] configuration,
+    input [2:0] select,
 
     //north outputs on macros
     input [9:0] north_o_0,
@@ -56,40 +56,7 @@ module v_line #(parameter integer position = 0)
     output [31:0] wbs_dat_o_buf
 );
 //
-reg [1 : 0] select; 
 //mux select logic. The logic changes with the position of the vertical line
-generate
-    case(position)
-    0:
-        always@(*)
-            case(configuration)
-                0: select = 0;
-                1: select = 2;
-                2: select = 1;
-                3: select = 2;
-                default: select = 0;
-            endcase
-    1:
-        always@(*)
-            case(configuration)
-                0: select = 0;
-                1: select = 0;
-                2: select = 1;
-                3: select = 1;
-                default: select = 0;
-            endcase 
-    2: 
-        always@(*)
-            case(configuration)
-                0: select = 2;
-                1: select = 0;
-                2: select = 2;
-                3: select = 1;
-                default: select = 0;
-            endcase
-    endcase
-endgenerate
-
 //muxes
 always @(*) begin
     case(select)

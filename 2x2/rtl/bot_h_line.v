@@ -1,5 +1,6 @@
 module bot_h_line(
     input [3:0] configuration,
+    output reg [2:0] select_0, select_1, select_2, 
     //
     input wb_clk_i,
     input wb_rst_i,
@@ -85,4 +86,29 @@ assign wbs_adr_i_1 = wbs_adr_i;
 assign wbs_adr_i_2 = wbs_adr_i;
 assign wbs_adr_i_3 = wbs_adr_i;
 //
+//select logic for vertical lines
+always@(*)
+    case(configuration)
+        0: select_0 = 0;
+        1: select_0 = 2;
+        2: select_0 = 1;
+        3: select_0 = 2;
+        default: select_0 = 0;
+    endcase
+always@(*)
+    case(configuration)
+        0: select_1 = 0;
+        1: select_1 = 0;
+        2: select_1 = 1;
+        3: select_1 = 1;
+        default: select_1 = 0;
+    endcase 
+always@(*)
+    case(configuration)
+        0: select_2 = 2;
+        1: select_2 = 0;
+        2: select_2 = 2;
+        3: select_2 = 1;
+        default: select_2 = 0;
+    endcase
 endmodule
