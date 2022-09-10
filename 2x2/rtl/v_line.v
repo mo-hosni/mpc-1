@@ -1,4 +1,4 @@
-module v_line 
+module v_line_0
 (
     //configuration
     input [2:0] select,
@@ -22,23 +22,23 @@ module v_line
     output reg [13:0] east_oe_selected,
 
     //inputs to buffer
-    input [9:0] north_i,
-    input [13:0] east_i,
-    input [13:0] west_i,
+    input [9:0] north_i_0,
+    input [13:0] east_i_0,
+    input [13:0] west_i_0,
     //buffered inputs to the macros
     output [9:0] north_i_buf,
     output [13:0] east_i_buf_0, east_i_buf_1, east_i_buf_2,
     output [13:0] west_i_buf_0, west_i_buf_1, west_i_buf_2,
 
     //WB
-    input wb_clk_i,
-    input wb_rst_i,
-    input wbs_stb_i,
-    input wbs_cyc_i,
-    input wbs_we_i,
-    input [3:0] wbs_sel_i,
-    input [31:0] wbs_dat_i,
-    input [31:0] wbs_adr_i,
+    input wb_clk_i_0,
+    input wb_rst_i_0,
+    input wbs_stb_i_0,
+    input wbs_cyc_i_0,
+    input wbs_we_i_0,
+    input [3:0] wbs_sel_i_0,
+    input [31:0] wbs_dat_i_0,
+    input [31:0] wbs_adr_i_0,
     //
     output wb_clk_i_buf,
     output wb_rst_i_buf,
@@ -49,8 +49,8 @@ module v_line
     output [31:0] wbs_dat_i_buf,
     output [31:0] wbs_adr_i_buf,
     //
-    input wbs_ack_o,
-    input [31:0] wbs_dat_o,
+    input wbs_ack_o_0,
+    input [31:0] wbs_dat_o_0,
     //
     output wbs_ack_o_buf,
     output [31:0] wbs_dat_o_buf
@@ -94,26 +94,26 @@ end
 assign north_o_buf = north_o_0;
 assign north_oe_buf = north_oe_0;
 //
-assign north_i_buf = north_i;
+assign north_i_buf = north_i_0;
 //
-assign east_i_buf_0 = east_i;
-assign east_i_buf_1 = east_i;
-assign east_i_buf_2 = east_i;
+assign east_i_buf_0 = east_i_0;
+assign east_i_buf_1 = east_i_0;
+assign east_i_buf_2 = east_i_0;
 //
-assign west_i_buf_0 = west_i;
-assign west_i_buf_1 = west_i;
-assign west_i_buf_2 = west_i;
+assign west_i_buf_0 = west_i_0;
+assign west_i_buf_1 = west_i_0;
+assign west_i_buf_2 = west_i_0;
 //WB forwawrding
-assign wb_clk_i_buf = wb_clk_i;
-assign wb_rst_i_buf = wb_rst_i;
-assign wbs_stb_i_buf = wbs_stb_i;
-assign wbs_cyc_i_buf = wbs_cyc_i;
-assign wbs_we_i_buf = wbs_we_i;
-assign wbs_sel_i_buf = wbs_sel_i;
-assign wbs_dat_i_buf = wbs_dat_i;
-assign wbs_adr_i_buf = wbs_adr_i;
+assign wb_clk_i_buf = wb_clk_i_0;
+assign wb_rst_i_buf = wb_rst_i_0;
+assign wbs_stb_i_buf = wbs_stb_i_0;
+assign wbs_cyc_i_buf = wbs_cyc_i_0;
+assign wbs_we_i_buf = wbs_we_i_0;
+assign wbs_sel_i_buf = wbs_sel_i_0;
+assign wbs_dat_i_buf = wbs_dat_i_0;
+assign wbs_adr_i_buf = wbs_adr_i_0;
 //
-assign wbs_ack_o_buf = wbs_ack_o;
-assign wbs_dat_o_buf = wbs_dat_o;
+assign wbs_ack_o_buf = wbs_ack_o_0;
+assign wbs_dat_o_buf = wbs_dat_o_0;
 //
 endmodule

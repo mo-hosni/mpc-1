@@ -88,7 +88,7 @@ wire [31:0] NC_22, NC_23, NC_25;
 
 
 //vertical selectors
-v_line  v_selector_0 (
+v_line_0  v_selector_0 (
     //inputs
     .select(select_0), 
 
@@ -113,27 +113,27 @@ v_line  v_selector_0 (
     .east_oe_selected(NC_2),
     
     //inputs
-    .north_i(10'd0),
+    .north_i_0(10'd0),
     .north_i_buf(NC_7),
     //
-    .west_i(IO_west_i),
+    .west_i_0(IO_west_i),
     .west_i_buf_0(west_i_0),
     .west_i_buf_1(west_i_2),
     .west_i_buf_2(west_i_buf_0_vline),
     //
-    .east_i(14'd0),
+    .east_i_0(14'd0),
     .east_i_buf_0(NC_8),
     .east_i_buf_1(NC_9),
     .east_i_buf_2(NC_10),
     //WB
-    .wb_clk_i(1'b0),
-    .wb_rst_i(1'b0),
-    .wbs_stb_i(1'b0),
-    .wbs_cyc_i(1'b0),
-    .wbs_we_i(1'b0),
-    .wbs_sel_i(4'd0),
-    .wbs_dat_i(32'd0),
-    .wbs_adr_i(32'd0),
+    .wb_clk_i_0(1'b0),
+    .wb_rst_i_0(1'b0),
+    .wbs_stb_i_0(1'b0),
+    .wbs_cyc_i_0(1'b0),
+    .wbs_we_i_0(1'b0),
+    .wbs_sel_i_0(4'd0),
+    .wbs_dat_i_0(32'd0),
+    .wbs_adr_i_0(32'd0),
     //
     .wb_clk_i_buf(NC_16),
     .wb_rst_i_buf(NC_17),
@@ -144,13 +144,13 @@ v_line  v_selector_0 (
     .wbs_dat_i_buf(NC_22),
     .wbs_adr_i_buf(NC_23),
     //
-    .wbs_ack_o(wbs_ack_o_2),
-    .wbs_dat_o(wbs_dat_o_2),
+    .wbs_ack_o_0(wbs_ack_o_2),
+    .wbs_dat_o_0(wbs_dat_o_2),
     //
     .wbs_ack_o_buf(wbs_ack_o_vline_0),
     .wbs_dat_o_buf(wbs_dat_o_vline_0)
     );
-v_line v_selector_1 (
+v_line_0 v_selector_1 (
     //inputs
     .select(select_1), 
 
@@ -174,27 +174,27 @@ v_line v_selector_1 (
     .east_o_selected(east_o_4),
     .east_oe_selected(east_oe_4),
     //inputs
-    .north_i(north_i_buf_0_vline),
+    .north_i_0(north_i_buf_0_vline),
     .north_i_buf(north_i_0),
     //
-    .west_i(west_i_buf_0_vline),
+    .west_i_0(west_i_buf_0_vline),
     .west_i_buf_0(west_i_1),
     .west_i_buf_1(west_i_3),
     .west_i_buf_2(NC_14),
     //
-    .east_i(east_i_buf_0_vline),
+    .east_i_0(east_i_buf_0_vline),
     .east_i_buf_0(east_i_0),
     .east_i_buf_1(east_i_2),
     .east_i_buf_2(NC_15),
     //WB
-    .wb_clk_i(wb_clk_i_vline_0),
-    .wb_rst_i(wb_rst_i_vline_0),
-    .wbs_stb_i(wbs_stb_i_vline_0),
-    .wbs_cyc_i(wbs_cyc_i_vline_0),
-    .wbs_we_i(wbs_we_i_vline_0),
-    .wbs_sel_i(wbs_sel_i_vline_0),
-    .wbs_dat_i(wbs_dat_i_vline_0),
-    .wbs_adr_i(wbs_adr_i_vline_0),
+    .wb_clk_i_0(wb_clk_i_vline_0),
+    .wb_rst_i_0(wb_rst_i_vline_0),
+    .wbs_stb_i_0(wbs_stb_i_vline_0),
+    .wbs_cyc_i_0(wbs_cyc_i_vline_0),
+    .wbs_we_i_0(wbs_we_i_vline_0),
+    .wbs_sel_i_0(wbs_sel_i_vline_0),
+    .wbs_dat_i_0(wbs_dat_i_vline_0),
+    .wbs_adr_i_0(wbs_adr_i_vline_0),
     //
     .wb_clk_i_buf(wb_clk_i_2),
     .wb_rst_i_buf(wb_rst_i_2),
@@ -205,14 +205,14 @@ v_line v_selector_1 (
     .wbs_dat_i_buf(wbs_dat_i_2),
     .wbs_adr_i_buf(wbs_adr_i_2),
     //
-    .wbs_ack_o(wbs_ack_o_3),
-    .wbs_dat_o(wbs_dat_o_3),
+    .wbs_ack_o_0(wbs_ack_o_3),
+    .wbs_dat_o_0(wbs_dat_o_3),
     //
     .wbs_ack_o_buf(wbs_ack_o_vline_1),
     .wbs_dat_o_buf(wbs_dat_o_vline_1)
     );
 
-v_line v_selector_2 (
+v_line_0 v_selector_2 (
     //inputs
     .select(select_2), 
 
@@ -236,27 +236,27 @@ v_line v_selector_2 (
     .east_o_selected(IO_east_o),
     .east_oe_selected(IO_east_oe),
     //inputs
-    .north_i(north_i_buf_1_vline),
+    .north_i_0(north_i_buf_1_vline),
     .north_i_buf(north_i_1),
     //
-    .east_i(IO_east_i),
+    .east_i_0(IO_east_i),
     .east_i_buf_0(east_i_1),
     .east_i_buf_1(east_i_3),
     .east_i_buf_2(east_i_buf_0_vline),
     //
-    .west_i(14'd0),
+    .west_i_0(14'd0),
     .west_i_buf_0(NC_11),
     .west_i_buf_1(NC_12),
     .west_i_buf_2(NC_13),
     //WB
-    .wb_clk_i(wb_clk_i_vline_1),
-    .wb_rst_i(wb_rst_i_vline_1),
-    .wbs_stb_i(wbs_stb_i_vline_1),
-    .wbs_cyc_i(wbs_cyc_i_vline_1),
-    .wbs_we_i(wbs_we_i_vline_1),
-    .wbs_sel_i(wbs_sel_i_vline_1),
-    .wbs_dat_i(wbs_dat_i_vline_1),
-    .wbs_adr_i(wbs_adr_i_vline_1),
+    .wb_clk_i_0(wb_clk_i_vline_1),
+    .wb_rst_i_0(wb_rst_i_vline_1),
+    .wbs_stb_i_0(wbs_stb_i_vline_1),
+    .wbs_cyc_i_0(wbs_cyc_i_vline_1),
+    .wbs_we_i_0(wbs_we_i_vline_1),
+    .wbs_sel_i_0(wbs_sel_i_vline_1),
+    .wbs_dat_i_0(wbs_dat_i_vline_1),
+    .wbs_adr_i_0(wbs_adr_i_vline_1),
     //
     .wb_clk_i_buf(wb_clk_i_3),
     .wb_rst_i_buf(wb_rst_i_3),
@@ -267,8 +267,8 @@ v_line v_selector_2 (
     .wbs_dat_i_buf(wbs_dat_i_3),
     .wbs_adr_i_buf(wbs_adr_i_3),
     //
-    .wbs_ack_o(1'b0),
-    .wbs_dat_o(32'd0),
+    .wbs_ack_o_0(1'b0),
+    .wbs_dat_o_0(32'd0),
     //
     .wbs_ack_o_buf(NC_24),
     .wbs_dat_o_buf(NC_25)
@@ -285,12 +285,12 @@ top_h_line u_selector
     .north_o_selected(IO_north_o),
     .north_oe_selected(IO_north_oe),
     //inputs from pads
-    .north_i(IO_north_i),
+    .north_i_0(IO_north_i),
     //buffered inputs
     .north_i_buf_0(north_i_buf_0_vline), .north_i_buf_1(north_i_buf_1_vline), .north_i_buf_2(north_i_2), .north_i_buf_3(north_i_3)
 );
 //bottom horizontal line
-bot_h_line b_selector 
+bot_h_line_0 b_selector 
 (
     .configuration,
     .select_0, .select_1, .select_2,
@@ -300,11 +300,11 @@ bot_h_line b_selector
     .wbs_stb_i,
     .wbs_cyc_i,
     .wbs_we_i,
-    .wbs_sel_i,
-    .wbs_dat_i,
-    .wbs_adr_i,
+    .wbs_sel_ii(wbs_sel_i),
+    .wbs_dat_ii(wbs_dat_i),
+    .wbs_adr_ii(wbs_adr_i),
     .wbs_ack_o,
-    .wbs_dat_o,
+    .wbs_dat_oo(wbs_dat_o),
     //
     .wb_clk_i_0,    .wb_clk_i_1(wb_clk_i_vline_0),  .wb_clk_i_2(wb_clk_i_1),        .wb_clk_i_3(wb_clk_i_vline_1),
     .wb_rst_i_0,    .wb_rst_i_1(wb_rst_i_vline_0),  .wb_rst_i_2(wb_rst_i_1),        .wb_rst_i_3(wb_rst_i_vline_1),

@@ -10,7 +10,7 @@ module top_h_line (
     output reg [9:0] north_oe_selected,
 
     // //north inputs from pads
-    input [9:0] north_i,
+    input [9:0] north_i_0,
     // //buffered inputs to the macros
     output [9:0] north_i_buf_0, north_i_buf_1, north_i_buf_2, north_i_buf_3
 );
@@ -35,9 +35,9 @@ always@(*)
     endcase 
 
 //outputs to be buffered
-assign north_i_buf_0 = north_i;
-assign north_i_buf_1 = north_i;
-assign north_i_buf_2 = north_i;
-assign north_i_buf_3 = north_i;
+assign north_i_buf_0 = north_i_0;
+assign north_i_buf_1 = north_i_0;
+assign north_i_buf_2 = north_i_0;
+assign north_i_buf_3 = north_i_0;
 //
 endmodule
