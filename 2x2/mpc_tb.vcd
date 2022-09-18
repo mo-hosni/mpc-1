@@ -1,0 +1,362 @@
+$date
+	Mon Sep 19 00:50:36 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module mpc_tb $end
+$var wire 32 ! wbs_dat_o [31:0] $end
+$var wire 1 " wbs_ack_o $end
+$var wire 14 # IO_west_oe [13:0] $end
+$var wire 14 $ IO_west_o [13:0] $end
+$var wire 10 % IO_north_oe [9:0] $end
+$var wire 10 & IO_north_o [9:0] $end
+$var wire 14 ' IO_east_oe [13:0] $end
+$var wire 14 ( IO_east_o [13:0] $end
+$var reg 14 ) IO_east_i [13:0] $end
+$var reg 10 * IO_north_i [9:0] $end
+$var reg 14 + IO_west_i [13:0] $end
+$var reg 4 , configuration [3:0] $end
+$var reg 1 - wb_clk_i $end
+$var reg 1 . wb_rst_i $end
+$var reg 32 / wbs_adr_i [31:0] $end
+$var reg 1 0 wbs_cyc_i $end
+$var reg 32 1 wbs_dat_i [31:0] $end
+$var reg 4 2 wbs_sel_i [3:0] $end
+$var reg 1 3 wbs_stb_i $end
+$var reg 1 4 wbs_we_i $end
+$scope module dut $end
+$var wire 14 5 IO_east_i [13:0] $end
+$var wire 14 6 IO_east_o [13:0] $end
+$var wire 14 7 IO_east_oe [13:0] $end
+$var wire 10 8 IO_north_i [9:0] $end
+$var wire 10 9 IO_north_o [9:0] $end
+$var wire 10 : IO_north_oe [9:0] $end
+$var wire 14 ; IO_west_i [13:0] $end
+$var wire 14 < IO_west_o [13:0] $end
+$var wire 14 = IO_west_oe [13:0] $end
+$var wire 4 > configuration [3:0] $end
+$var wire 1 - wb_clk_i $end
+$var wire 1 . wb_rst_i $end
+$var wire 1 " wbs_ack_o $end
+$var wire 32 ? wbs_adr_i [31:0] $end
+$var wire 1 0 wbs_cyc_i $end
+$var wire 32 @ wbs_dat_i [31:0] $end
+$var wire 32 A wbs_dat_o [31:0] $end
+$var wire 4 B wbs_sel_i [3:0] $end
+$var wire 1 3 wbs_stb_i $end
+$var wire 1 4 wbs_we_i $end
+$var parameter 32 C WB_addr_bits $end
+$var parameter 32 D WB_data_bits $end
+$var parameter 32 E WB_select_bits $end
+$var parameter 32 F cfg_bits $end
+$var parameter 32 G chip_IOs_east $end
+$var parameter 32 H chip_IOs_north $end
+$var parameter 32 I chip_IOs_west $end
+$var parameter 32 J columns $end
+$var parameter 32 K rows $end
+$var parameter 32 L user_macros $end
+$scope begin genblk1[0] $end
+$var parameter 2 M i $end
+$scope module macro $end
+$var wire 14 N IO_east_i [13:0] $end
+$var wire 14 O IO_east_o [13:0] $end
+$var wire 14 P IO_east_oe [13:0] $end
+$var wire 10 Q IO_north_i [9:0] $end
+$var wire 10 R IO_north_o [9:0] $end
+$var wire 10 S IO_north_oe [9:0] $end
+$var wire 14 T IO_west_i [13:0] $end
+$var wire 14 U IO_west_o [13:0] $end
+$var wire 14 V IO_west_oe [13:0] $end
+$var wire 1 - wb_clk_i $end
+$var wire 1 . wb_rst_i $end
+$var wire 1 W wbs_ack_o $end
+$var wire 32 X wbs_adr_i [31:0] $end
+$var wire 1 0 wbs_cyc_i $end
+$var wire 32 Y wbs_dat_i [31:0] $end
+$var wire 32 Z wbs_dat_o [31:0] $end
+$var wire 4 [ wbs_sel_i [3:0] $end
+$var wire 1 3 wbs_stb_i $end
+$var wire 1 4 wbs_we_i $end
+$var parameter 32 \ number $end
+$scope begin genblk1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[1] $end
+$var parameter 2 ] i $end
+$scope module macro $end
+$var wire 14 ^ IO_east_i [13:0] $end
+$var wire 14 _ IO_east_o [13:0] $end
+$var wire 14 ` IO_east_oe [13:0] $end
+$var wire 10 a IO_north_i [9:0] $end
+$var wire 10 b IO_north_o [9:0] $end
+$var wire 10 c IO_north_oe [9:0] $end
+$var wire 14 d IO_west_i [13:0] $end
+$var wire 14 e IO_west_o [13:0] $end
+$var wire 14 f IO_west_oe [13:0] $end
+$var wire 1 - wb_clk_i $end
+$var wire 1 . wb_rst_i $end
+$var wire 1 g wbs_ack_o $end
+$var wire 32 h wbs_adr_i [31:0] $end
+$var wire 1 0 wbs_cyc_i $end
+$var wire 32 i wbs_dat_i [31:0] $end
+$var wire 32 j wbs_dat_o [31:0] $end
+$var wire 4 k wbs_sel_i [3:0] $end
+$var wire 1 3 wbs_stb_i $end
+$var wire 1 4 wbs_we_i $end
+$var parameter 32 l number $end
+$scope begin genblk1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[2] $end
+$var parameter 3 m i $end
+$scope module macro $end
+$var wire 14 n IO_east_i [13:0] $end
+$var wire 14 o IO_east_o [13:0] $end
+$var wire 14 p IO_east_oe [13:0] $end
+$var wire 10 q IO_north_i [9:0] $end
+$var wire 10 r IO_north_o [9:0] $end
+$var wire 10 s IO_north_oe [9:0] $end
+$var wire 14 t IO_west_i [13:0] $end
+$var wire 14 u IO_west_o [13:0] $end
+$var wire 14 v IO_west_oe [13:0] $end
+$var wire 1 - wb_clk_i $end
+$var wire 1 . wb_rst_i $end
+$var wire 1 w wbs_ack_o $end
+$var wire 32 x wbs_adr_i [31:0] $end
+$var wire 1 0 wbs_cyc_i $end
+$var wire 32 y wbs_dat_i [31:0] $end
+$var wire 32 z wbs_dat_o [31:0] $end
+$var wire 4 { wbs_sel_i [3:0] $end
+$var wire 1 3 wbs_stb_i $end
+$var wire 1 4 wbs_we_i $end
+$var parameter 32 | number $end
+$scope begin genblk1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[3] $end
+$var parameter 3 } i $end
+$scope module macro $end
+$var wire 14 ~ IO_east_i [13:0] $end
+$var wire 14 !" IO_east_o [13:0] $end
+$var wire 14 "" IO_east_oe [13:0] $end
+$var wire 10 #" IO_north_i [9:0] $end
+$var wire 10 $" IO_north_o [9:0] $end
+$var wire 10 %" IO_north_oe [9:0] $end
+$var wire 14 &" IO_west_i [13:0] $end
+$var wire 14 '" IO_west_o [13:0] $end
+$var wire 14 (" IO_west_oe [13:0] $end
+$var wire 1 - wb_clk_i $end
+$var wire 1 . wb_rst_i $end
+$var wire 1 )" wbs_ack_o $end
+$var wire 32 *" wbs_adr_i [31:0] $end
+$var wire 1 0 wbs_cyc_i $end
+$var wire 32 +" wbs_dat_i [31:0] $end
+$var wire 32 ," wbs_dat_o [31:0] $end
+$var wire 4 -" wbs_sel_i [3:0] $end
+$var wire 1 3 wbs_stb_i $end
+$var wire 1 4 wbs_we_i $end
+$var parameter 32 ." number $end
+$scope begin genblk1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b11 ."
+b11 }
+b10 |
+b10 m
+b1 l
+b1 ]
+b0 \
+b0 M
+b100 L
+b10 K
+b10 J
+b1110 I
+b1010 H
+b1110 G
+b100 F
+b100 E
+b100000 D
+b100000 C
+$end
+#0
+$dumpvars
+b1010 -"
+b1000 ,"
+b10100 +"
+b11110 *"
+1)"
+b11111111111111 ("
+b1000 '"
+b100011 &"
+b1111111111 %"
+b1000 $"
+b11001 #"
+b11111111111111 ""
+b1000 !"
+b11110 ~
+b1010 {
+b100 z
+b10100 y
+b11110 x
+1w
+b11111111111111 v
+b100 u
+b100011 t
+b1111111111 s
+b100 r
+b11001 q
+b11111111111111 p
+b100 o
+b11110 n
+b1010 k
+b10 j
+b10100 i
+b11110 h
+1g
+b11111111111111 f
+b10 e
+b100011 d
+b1111111111 c
+b10 b
+b11001 a
+b11111111111111 `
+b10 _
+b11110 ^
+b1010 [
+b1 Z
+b10100 Y
+b11110 X
+1W
+b11111111111111 V
+b1 U
+b100011 T
+b1111111111 S
+b1 R
+b11001 Q
+b11111111111111 P
+b1 O
+b11110 N
+b1010 B
+b1 A
+b10100 @
+b11110 ?
+b0 >
+b11111111111111 =
+b1 <
+b100011 ;
+b1111111111 :
+b1 9
+b11001 8
+b11111111111111 7
+b1 6
+b11110 5
+14
+03
+b1010 2
+b10100 1
+00
+b11110 /
+1.
+0-
+b0 ,
+b100011 +
+b11001 *
+b11110 )
+b1 (
+b11111111111111 '
+b1 &
+b1111111111 %
+b1 $
+b11111111111111 #
+1"
+b1 !
+$end
+#5
+0.
+1-
+#10
+0-
+b10 &
+b10 9
+b10 (
+b10 6
+b10 $
+b10 <
+b10 !
+b10 A
+b1 ,
+b1 >
+#15
+1-
+#20
+0-
+b100 &
+b100 9
+b100 (
+b100 6
+b100 $
+b100 <
+b100 !
+b100 A
+b10 ,
+b10 >
+#25
+1-
+#30
+0-
+b1000 &
+b1000 9
+b1000 (
+b1000 6
+b1000 $
+b1000 <
+b1000 !
+b1000 A
+b11 ,
+b11 >
+#35
+1-
+#40
+0-
+bx &
+bx 9
+bx %
+bx :
+bx (
+bx 6
+bx '
+bx 7
+bx $
+bx <
+bx #
+bx =
+x"
+bx !
+bx A
+b100 ,
+b100 >
+#45
+1-
+#50
+0-
+b101 ,
+b101 >
+#55
+1-
+#60
+0-
+b110 ,
+b110 >

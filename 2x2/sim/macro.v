@@ -1,3 +1,4 @@
+(* blackbox *)
 module macro #(
     parameter integer number = 0
 ) (
